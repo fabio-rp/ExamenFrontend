@@ -1,0 +1,185 @@
+Total Tests: 172, Passed Tests: 172, Failed Tests: 0, Average Duration: 8.65ms
+
+Files Summary:
+restaurants.test.js: Total: 85, Passed: 85, Failed: 0, Average Duration: 6.95ms
+schedules.test.js: Total: 39, Passed: 39, Failed: 0, Average Duration: 10.51ms
+products.test.js: Total: 25, Passed: 25, Failed: 0, Average Duration: 9.52ms
+auth.test.js: Total: 20, Passed: 20, Failed: 0, Average Duration: 10.20ms
+users.test.js: Total: 1, Passed: 1, Failed: 0, Average Duration: 8.00ms
+restaurantCategories.test.js: Total: 1, Passed: 1, Failed: 0, Average Duration: 14.00ms
+productCategories.test.js: Total: 1, Passed: 1, Failed: 0, Average Duration: 22.00ms
+
+Test Results:
+File,Test,Duration,Status
+restaurants.test.js,Get restaurant details Should return 404 with incorrect id,32,passed
+restaurants.test.js,Get restaurant details Should return 200 with correct id,25,passed
+restaurants.test.js,Get restaurant details The restaurant must not include its userId,0,passed
+restaurants.test.js,Get restaurant details All restaurants properties must be correctly defined,2,passed
+restaurants.test.js,Get restaurant details The restaurant must include products,0,passed
+restaurants.test.js,Get restaurant details The products of the restaurant must not be empty,0,passed
+restaurants.test.js,Get restaurant details The restaurant must have a restaurant category,1,passed
+restaurants.test.js,Get restaurant details The products the restaurant must have a product category,0,passed
+restaurants.test.js,Get all restaurants There must be more than one restaurant,12,passed
+restaurants.test.js,Get all restaurants All restaurants must have an id,0,passed
+restaurants.test.js,Get all restaurants All restaurants must have a restaurant category,1,passed
+restaurants.test.js,Get all restaurants All restaurants properties must be correctly defined,2,passed
+restaurants.test.js,Get owner restaurants should not be able to retrieve restaurants with a fake token,10,passed
+restaurants.test.js,Get owner restaurants should be able to retrieve restaurants with the real token,7,passed
+restaurants.test.js,Get owner restaurants The owner must have more than one restaurant,1,passed
+restaurants.test.js,Get owner restaurants All owner restaurants must have an id,0,passed
+restaurants.test.js,Get owner restaurants All owner restaurants must have a restaurant category,1,passed
+restaurants.test.js,Get owner restaurant details Should return 404 with incorrect id,5,passed
+restaurants.test.js,Get owner restaurant details The restaurants of owner 1 must not include its userId,1,passed
+restaurants.test.js,Get owner restaurant details The restaurants of owner 1 must include products,0,passed
+restaurants.test.js,Get owner restaurant details The products of the first two restaurants of owner 1 must not be empty,1,passed
+restaurants.test.js,Get owner restaurant details The products of the first two restaurants of owner 1 must have a product category,0,passed
+restaurants.test.js,Create restaurant Should return 401 if not logged in,5,passed
+restaurants.test.js,Create restaurant Should return 403 when logged in as a customer,5,passed
+restaurants.test.js,Create restaurant Should return 200 when valid restaurant,15,passed
+restaurants.test.js,Create restaurant validations Should return 422 when name is empty,7,passed
+restaurants.test.js,Create restaurant validations Should return 422 when name is more than 255 chars,6,passed
+restaurants.test.js,Create restaurant validations Should return 422 when name is not a string,5,passed
+restaurants.test.js,Create restaurant validations Should return 200 even when description is omitted (optional),12,passed
+restaurants.test.js,Create restaurant validations Should return 422 when description is not a string,6,passed
+restaurants.test.js,Create restaurant validations Should return 422 when address is empty,6,passed
+restaurants.test.js,Create restaurant validations Should return 422 when address is more than 255 chars,6,passed
+restaurants.test.js,Create restaurant validations Should return 422 when address is not a string,7,passed
+restaurants.test.js,Create restaurant validations Should return 422 when postalCode is empty,6,passed
+restaurants.test.js,Create restaurant validations Should return 422 when postalCode is more than 255 chars,6,passed
+restaurants.test.js,Create restaurant validations Should return 422 when postalCode is not a string,5,passed
+restaurants.test.js,Create restaurant validations Should return 422 when url is invalid URL,6,passed
+restaurants.test.js,Create restaurant validations Should return 422 when url is not a string,6,passed
+restaurants.test.js,Create restaurant validations Should return 422 when shippingCosts is negative,6,passed
+restaurants.test.js,Create restaurant validations Should return 422 when shippingCosts is not a number,6,passed
+restaurants.test.js,Create restaurant validations Should return 422 when email is invalid email,8,passed
+restaurants.test.js,Create restaurant validations Should return 422 when email is not a string,6,passed
+restaurants.test.js,Create restaurant validations Should return 422 when phone is more than 255 chars,6,passed
+restaurants.test.js,Create restaurant validations Should return 422 when phone is not a string,5,passed
+restaurants.test.js,Create restaurant validations Should return 422 when restaurantCategoryId is missing,5,passed
+restaurants.test.js,Create restaurant validations Should return 422 when restaurantCategoryId is null,5,passed
+restaurants.test.js,Create restaurant validations Should return 422 when restaurantCategoryId is not an integer,5,passed
+restaurants.test.js,Create restaurant validations Should return 422 when restaurantCategoryId is less than 1,5,passed
+restaurants.test.js,Create restaurant validations Should return 422 when userId is included in the request body,6,passed
+restaurants.test.js,Edit restaurant Should return 401 if not logged in,7,passed
+restaurants.test.js,Edit restaurant Should return 403 when logged in as a customer,6,passed
+restaurants.test.js,Edit restaurant Should return 403 when trying to edit a restaurant that is not yours,29,passed
+restaurants.test.js,Edit restaurant Should return 200 when valid restaurant,10,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when name is empty,7,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when name is more than 255 chars,6,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when name is not a string,7,passed
+restaurants.test.js,Edit restaurant validations Should return 200 even when description is omitted (optional),11,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when description is not a string,7,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when address is empty,6,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when address is more than 255 chars,8,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when address is not a string,7,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when postalCode is empty,7,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when postalCode is more than 255 chars,7,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when postalCode is not a string,7,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when url is invalid URL,6,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when url is not a string,6,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when shippingCosts is negative,8,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when shippingCosts is not a number,7,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when email is invalid email,7,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when email is not a string,7,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when phone is more than 255 chars,7,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when phone is not a string,6,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when restaurantCategoryId is missing,7,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when restaurantCategoryId is null,6,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when restaurantCategoryId is not an integer,7,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when restaurantCategoryId is less than 1,6,passed
+restaurants.test.js,Edit restaurant validations Should return 422 when userId is included in the request body,9,passed
+restaurants.test.js,Remove restaurant Should return 401 if not logged in,4,passed
+restaurants.test.js,Remove restaurant Should return 403 when logged in as a customer,5,passed
+restaurants.test.js,Remove restaurant Should return 403 when trying to delete a restaurant that is not yours,28,passed
+restaurants.test.js,Remove restaurant Should return 409 when removing a restaurant with orders,11,passed
+restaurants.test.js,Remove restaurant Should return 200 when valid restaurant,10,passed
+restaurants.test.js,Remove restaurant Should return 404 when trying to delete a restaurant already deleted,5,passed
+restaurants.test.js,Get analytics restaurant Should return 403 when trying to delete a restaurant that is not yours,26,passed
+restaurants.test.js,Get analytics restaurant Should return 200 when valid restaurant,8,passed
+schedules.test.js,Get restaurant schedules Should return 404 with incorrect restaurant id,21,passed
+schedules.test.js,Get restaurant schedules Should return 200 with correct restaurant id,11,passed
+schedules.test.js,Get restaurant schedules All schedule properties must be correctly defined,2,passed
+schedules.test.js,Get restaurant schedules Should return at least one schedule when schedules exist,0,passed
+schedules.test.js,Create schedule Should return 401 if not logged in,5,passed
+schedules.test.js,Create schedule Should return 403 if logged in as another user,30,passed
+schedules.test.js,Create schedule Should return 422 if startTime is missing,7,passed
+schedules.test.js,Create schedule Should return 422 if endTime is missing,7,passed
+schedules.test.js,Create schedule Should return 422 if startTime is greater than endTime,8,passed
+schedules.test.js,Create schedule Should return 422 if startTime is equal to endTime,13,passed
+schedules.test.js,Create schedule Should return 422 if startTime has an invalid time,7,passed
+schedules.test.js,Create schedule Should return 422 if endTime has an invalid time,8,passed
+schedules.test.js,Create schedule Should return 422 if startTime has no seconds,7,passed
+schedules.test.js,Create schedule Should return 422 if endTime has no seconds,7,passed
+schedules.test.js,Create schedule Should return 200 when valid schedule is created,9,passed
+schedules.test.js,Edit schedule Should return 401 if not logged in,4,passed
+schedules.test.js,Edit schedule Should return 403 when trying to edit a schedule that is not yours,27,passed
+schedules.test.js,Edit schedule Should return 404 when restaurantId does not exists,5,passed
+schedules.test.js,Edit schedule Should return 404 when scheduleId does not exists,5,passed
+schedules.test.js,Edit schedule Should return 422 if startTime is missing,12,passed
+schedules.test.js,Edit schedule Should return 422 if endTime is missing,8,passed
+schedules.test.js,Edit schedule Should return 422 if startTime has no seconds,8,passed
+schedules.test.js,Edit schedule Should return 422 if endTime has no seconds,7,passed
+schedules.test.js,Edit schedule Should return 422 if startTime is greater to endTime,7,passed
+schedules.test.js,Edit schedule Should return 422 if startTime is equal to endTime,8,passed
+schedules.test.js,Edit schedule Should return 200 when schedule is updated,10,passed
+schedules.test.js,Remove schedule Should return 401 if not logged in,4,passed
+schedules.test.js,Remove schedule Should return 403 when trying to delete a schedule that is not yours,25,passed
+schedules.test.js,Remove schedule Should return 404 when trying to delete a schedule from a restaurant that does not exist,5,passed
+schedules.test.js,Remove schedule Should return 404 when trying to delete a schedule that does not exist,6,passed
+schedules.test.js,Remove schedule Should return 200 when valid schedule is deleted,9,passed
+schedules.test.js,Remove schedule Should return 404 when trying to delete a schedule already deleted,6,passed
+schedules.test.js,Create product with optional schedule Should return 422 if scheduleId does not belong to restaurant,23,passed
+schedules.test.js,Create product with optional schedule Should return 422 when creating a product with non-existent scheduleId,6,passed
+schedules.test.js,Create product with optional schedule Should return 200 when valid product with schedule is created,9,passed
+schedules.test.js,Edit product with optional schedule Should return 422 when scheduleId belongs to another restaurant,41,passed
+schedules.test.js,Edit product with optional schedule Should return 422 when updating a product with non-existent scheduleId,7,passed
+schedules.test.js,Edit product with optional schedule Should return 200 when product is updated with a valid schedule,13,passed
+schedules.test.js,GET /restaurants/:restaurantId/showWithActiveProducts muestra solo productos activos según horario Debería devolver sólo el producto activo según horario actual,13,passed
+products.test.js,Get restaurant products Should return 404 if restaurant does not exist,5,passed
+products.test.js,Get restaurant products Should return 200 if restaurant exists,7,passed
+products.test.js,Get restaurant products All products must have an id,0,passed
+products.test.js,Get restaurant products All products must have a product category,0,passed
+products.test.js,Get product details Should return 404 if the product does not exist,4,passed
+products.test.js,Get product details Should return 200 if products exists,57,passed
+products.test.js,Get product details All products must have an id,0,passed
+products.test.js,Get product details All products must have a product category,1,passed
+products.test.js,Create product Should return 401 if not logged in,4,passed
+products.test.js,Create product Should return 403 when logged in as a customer,5,passed
+products.test.js,Create product Should return 403 when logged in as another owner,29,passed
+products.test.js,Create product Should return 422 when invalid product data,23,passed
+products.test.js,Create product Should return 200 when valid product,9,passed
+products.test.js,Edit product Should return 401 if not logged in,3,passed
+products.test.js,Edit product Should return 403 when logged in as a customer,4,passed
+products.test.js,Edit product Should return 403 when logged in as another owner,25,passed
+products.test.js,Edit product Should return 422 when invalid restaurant,7,passed
+products.test.js,Edit product Should return 422 when sending a valid product with restaurantId,7,passed
+products.test.js,Edit product Should return 200 when sending a valid product without restaurantId,10,passed
+products.test.js,Remove product Should return 401 if not logged in,3,passed
+products.test.js,Remove product Should return 403 when logged in as a customer,4,passed
+products.test.js,Remove product Should return 403 when trying to delete a product that is not yours,6,passed
+products.test.js,Remove product Should return 409 when removing a product with orders,10,passed
+products.test.js,Remove product Should return 200 when product without orders,10,passed
+products.test.js,Remove product Should return 404 when trying to delete a product already deleted,5,passed
+auth.test.js,Login owner Login owner should return 422 if no email is provided,28,passed
+auth.test.js,Login owner should return a 401 status code for invalid credentials,12,passed
+auth.test.js,Login owner should return a 200 status code upon successful login,20,passed
+auth.test.js,Login owner should return a valid token upon successful owner login,6,passed
+auth.test.js,Login customer Login customer should return 422 if no email is provided,4,passed
+auth.test.js,Login customer should return a 401 status code for invalid credentials,5,passed
+auth.test.js,Login customer should return a 200 status code upon successful login,12,passed
+auth.test.js,Login customer should return a valid token upon successful login,6,passed
+auth.test.js,Register new customer should return a 422 when no email is provided,6,passed
+auth.test.js,Register new customer should return a 200 status code when successful register,15,passed
+auth.test.js,Register new customer should be able to login customer after registered,12,passed
+auth.test.js,Register new owner should return a 422 when no email is provided,5,passed
+auth.test.js,Register new owner should return a 200 status code when successful register,12,passed
+auth.test.js,Register new owner should be able to login owner after registered,10,passed
+auth.test.js,Delete account - owner should able to login owner after account registered,10,passed
+auth.test.js,Delete account - owner should be able to delete account afer owner registered,7,passed
+auth.test.js,Delete account - owner should not able to login owner after account deleted,5,passed
+auth.test.js,Edit logged user - customer should be able to login customer after account registered,11,passed
+auth.test.js,Edit logged user - customer customer data should have been modified,9,passed
+auth.test.js,Edit logged user - customer should be able to login after account modification,9,passed
+users.test.js,Get public user information Should return 200 and the user public information when retreiving newly created customer,8,passed
+restaurantCategories.test.js,Get all restaurant categories There must be more than one restaurant category,14,passed
+productCategories.test.js,Get all product categories There must be more than one product category,22,passed
